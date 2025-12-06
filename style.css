@@ -1,0 +1,205 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Logo, .Drapeau{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.Logo img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.Drapeau img{
+    height: 100%;
+    width: 100%;
+}
+.Baground-Image{
+    background: url(Images/Home\ Carroussel.jpg);
+    height: 550px;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+.sectTreeImage{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: -150px;
+}
+.TreeImage1{
+    min-height: 400px;
+}
+.TreeImage1 img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    background-size: cover;
+}
+.SousTreeimage {
+    /* position: relative; */
+    bottom: 10px;
+    height: auto;
+    height: 100px;
+}
+.Agritech-App{
+    background: url(Images/Home\ Carroussel.jpg);
+    height: 350px;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+.FourImages img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+ 
+.FooterImage{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.FooterImage img{
+    width: 100%;
+    height: 100%;
+
+}
+.bouton_danBurger{
+    width: 150px !important;
+    margin-left: 100px;
+}
+
+.input_recherche{
+    width: 500px !important;
+}
+.navbar_links{
+    width: 50% !important;
+}
+.Enfan_souTree_image{
+    transform: translateY(500px);
+
+}
+
+.TreeImage1:hover .SousTreeimage{
+    transition: 1s;
+    height: 60%;
+}
+
+.TreeImage1:hover .SousTreeimage .Enfan_souTree_image{
+    transition: transform 0.1s ease-in-out ;
+    transform: translateY(0);
+}
+
+.TreeImage1:hover img{
+    transition: transform 1s ease-in-out ;
+    transform: scale(1.3) rotate(12deg);
+    cursor: pointer;
+}
+
+
+/* -------------------Css_Page_Formations------------------- */
+
+.Hover_Image_Dix{
+    transition: transform 0.3s ease;
+}
+.Hover_Image_Dix:hover {
+    transform: scale(1.010);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.Cercle_jaune{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #FEC634;
+    top: -50px;
+    left: 20px;
+}
+
+/* --- Effet zoom image --- */
+.card-img-wrapper {
+    overflow: hidden;
+    border-radius: .5rem .5rem 0 0;
+}
+
+.Hover_Image_Dix {
+    transition: transform .4s ease;
+}
+
+.custom-card:hover .Hover_Image_Dix {
+    transform: scale(1.1);
+}
+
+/* --- Élévation de la card --- */
+.custom-card {
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+}
+
+/* -----------MediaQuery_PremierPage--------- */
+
+
+@media (max-width:768px) {
+
+    .SousTreeimage {
+        bottom:0;
+        height: 100% !important;
+        width: 100% !important;
+    }
+
+    .contactheader, .input_recherche{
+       display: none !important;
+    }
+    .SectFooter1{
+        font-size: 15px;
+    }
+    .SectFooter1 h4{
+        font-size: 18px;
+    }
+
+    .navbar_links{
+        width: 100% !important;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .hide-425 {
+        display:none !important;
+    }
+
+    .custom-425 .col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .custom-425{
+    display: flex;
+    gap: 10px;
+  }
+  .Confiance{
+    font-size: 16px !important;
+  }
+  
+}
+
+@media (max-width:1424px) {
+    .navbar_links{
+        width: 100% !important;
+    }
+}
