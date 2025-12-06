@@ -75,6 +75,18 @@ body{
     margin-left: 100px;
 }
 
+.plus_details:hover{
+    color: white !important;
+    border-radius: 10px;
+    background: #44976C;
+    height: 35px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
 .input_recherche{
     width: 500px !important;
 }
@@ -194,6 +206,12 @@ body{
   }
   .Confiance{
     font-size: 16px !important;
+  }
+
+  .header_fixe{
+    position: sticky;
+    top: 0;
+    z-index: 5;
   }
   
 }
