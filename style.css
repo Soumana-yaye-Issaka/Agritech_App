@@ -207,17 +207,14 @@ body{
   .Confiance{
     font-size: 16px !important;
   }
-
-  .header_fixe{
-    position: sticky;
-    top: 0;
-    z-index: 5;
-  }
   
 }
 
 @media (max-width:1424px) {
     .navbar_links{
         width: 100% !important;
+    }
+    .bouton_nav{
+        font-size: 13px;
     }
 }
